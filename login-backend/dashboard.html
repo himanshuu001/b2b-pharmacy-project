@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Fair Ford Pharmaceuticals</title>
+  <link rel="icon" type="image/png" href="image/LOGO.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:    #0a0d14;
+      --card:  rgba(255,255,255,0.04);
+      --border:rgba(255,255,255,0.08);
+      --text:  #e2e8f0;
+      --muted: rgba(255,255,255,0.45);
+      --blue:  #3b82f6;
+      --green: #10b981;
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+
+    /* ── Nav ── */
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 32px; border-bottom: 1px solid var(--border);
+      background: rgba(10,13,20,0.9); backdrop-filter: blur(12px);
+      position: sticky; top: 0; z-index: 10;
+    }
+    .nav-brand { display: flex; align-items: center; gap: 12px; }
+    .nav-brand img { width: 36px; height: 36px; }
+    .nav-brand span { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem; }
+    .nav-user { display: flex; align-items: center; gap: 16px; }
+    .user-chip {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--card); border: 1px solid var(--border);
+      padding: 8px 14px; border-radius: 40px; font-size: .85rem;
+    }
+    .user-chip i { color: var(--blue); }
+    .btn-logout {
+      padding: 8px 18px; border-radius: 8px; border: 1px solid rgba(239,68,68,0.4);
+      background: rgba(239,68,68,0.08); color: #f87171; font-size: .85rem;
+      font-weight: 600; cursor: pointer; transition: background .2s;
+    }
+    .btn-logout:hover { background: rgba(239,68,68,0.18); }
+
+    /* ── Main ── */
+    main { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
+
+    .welcome-banner {
+      background: linear-gradient(135deg, rgba(59,130,246,0.15), rgba(16,185,129,0.1));
+      border: 1px solid rgba(59,130,246,0.25);
+      border-radius: 16px; padding: 28px 32px; margin-bottom: 32px;
+    }
+    .welcome-banner h1 { font-family: 'Syne', sans-serif; font-size: 1.6rem; font-weight: 800; margin-bottom: 6px; }
+    .welcome-banner p  { color: var(--muted); font-size: .9rem; }
+    .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; background: rgba(16,185,129,0.15); color: #34d399; border: 1px solid rgba(16,185,129,0.3); margin-bottom: 12px; }
+
+    /* ── Stats ── */
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; }
+    .stat-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 22px 24px; display: flex; align-items: center; gap: 16px;
+    }
+    .stat-icon-wrap { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+    .ic-blue  { background: rgba(59,130,246,0.15); color: #60a5fa; }
+    .ic-green { background: rgba(16,185,129,0.15); color: #34d399; }
+    .ic-amber { background: rgba(245,158,11,0.15); color: #fbbf24; }
+    .ic-red   { background: rgba(239,68,68,0.15);  color: #f87171; }
+    .stat-val   { font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 800; }
+    .stat-label { font-size: .78rem; color: var(--muted); margin-top: 2px; }
+
+    /* ── Profile card ── */
+    .profile-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px 32px;
+    }
+    .profile-card h2 { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 20px; }
+    .profile-row { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+    .profile-row:last-child { border-bottom: none; }
+    .profile-row i { color: var(--blue); width: 20px; }
+    .profile-key  { font-size: .78rem; color: var(--muted); width: 100px; text-transform: uppercase; letter-spacing: .05em; }
+    .profile-val  { font-size: .9rem; font-weight: 500; }
+
+    /* ── Loading overlay ── */
+    #loading { position: fixed; inset: 0; background: var(--bg); display: flex; align-items: center; justify-content: center; z-index: 100; }
+    #loading p { color: var(--muted); font-size: .9rem; margin-top: 12px; }
+    .spinner { width: 36px; height: 36px; border: 3px solid var(--border); border-top-color: var(--blue); border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+
+<!-- Loading overlay shown until token is verified -->
+<div id="loading">
+  <div>
+    <div class="spinner"></div>
+    <p>Verifying session…</p>
+  </div>
+</div>
+
+<nav id="navbar" style="display:none;">
+  <div class="nav-brand">
+    <img src="image/LOGO.png" alt="Fair Ford" />
+    <span>Fair Ford Platform</span>
+  </div>
+  <div class="nav-user">
+    <div class="user-chip">
+      <i class="ri-user-3-line"></i>
+      <span id="navName">—</span>
+    </div>
+    <button class="btn-logout" onclick="logout()">
+      <i class="ri-logout-box-line"></i> Logout
+    </button>
+  </div>
+</nav>
+
+<main id="mainContent" style="display:none;">
+
+  <div class="welcome-banner">
+    <div class="badge"><i class="ri-shield-check-line"></i> Authenticated</div>
+    <h1>Welcome back, <span id="heroName">—</span> 👋</h1>
+    <p>You are signed in as <strong id="heroEmail">—</strong> · Role: <strong id="heroRole">—</strong></p>
+  </div>
+
+  <div class="stats">
+    <div class="stat-card">
+      <div class="stat-icon-wrap ic-blue"><i class="ri-file-list-3-line"></i></div>
+      <div><div class="stat-val">—</div><div class="stat-label">Pending Orders</div></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon-wrap ic-green"><i class="ri-truck-line"></i></div>
+      <div><div class="stat-val">—</div><div class="stat-label">Dispatched</div></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon-wrap ic-amber"><i class="ri-money-rupee-circle-line"></i></div>
+      <div><div class="stat-val">—</div><div class="stat-label">Outstanding (₹)</div></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon-wrap ic-red"><i class="ri-alert-line"></i></div>
+      <div><div class="stat-val">—</div><div class="stat-label">Low Stock SKUs</div></div>
+    </div>
+  </div>
+
+  <div class="profile-card">
+    <h2><i class="ri-user-settings-line" style="color:var(--blue);margin-right:8px;"></i>Profile Details (from /api/auth/profile)</h2>
+    <div class="profile-row"><i class="ri-user-line"></i><span class="profile-key">Name</span>  <span class="profile-val" id="pName">—</span></div>
+    <div class="profile-row"><i class="ri-mail-line"></i><span class="profile-key">Email</span> <span class="profile-val" id="pEmail">—</span></div>
+    <div class="profile-row"><i class="ri-briefcase-line"></i><span class="profile-key">Role</span>  <span class="profile-val" id="pRole">—</span></div>
+    <div class="profile-row"><i class="ri-key-line"></i><span class="profile-key">User ID</span> <span class="profile-val" id="pId" style="font-size:.78rem;color:rgba(255,255,255,0.35);">—</span></div>
+    <div class="profile-row"><i class="ri-calendar-line"></i><span class="profile-key">Joined</span> <span class="profile-val" id="pDate">—</span></div>
+  </div>
+
+</main>
+
+<script>
+  const API = 'http://localhost:5001/api/auth';
+
+  const roleLabels = { dist:'Distributor / Stockist', ret:'Retailer / Chemist', hosp:'Hospital / Institution', mfr:'Manufacturer' };
+
+  async function init() {
+    const token = localStorage.getItem('ff_token');
+    if (!token) { window.location.href = 'login&signup.html'; return; }
+
+    try {
+      const res  = await fetch(`${API}/profile`, { headers: { Authorization: `Bearer ${token}` } });
+      const data = await res.json();
+
+      if (!data.success) { logout(); return; }
+
+      const u = data.user;
+      // Populate UI
+      document.getElementById('navName').textContent  = u.name;
+      document.getElementById('heroName').textContent = u.name;
+      document.getElementById('heroEmail').textContent = u.email;
+      document.getElementById('heroRole').textContent  = roleLabels[u.role] || u.role;
+      document.getElementById('pName').textContent  = u.name;
+      document.getElementById('pEmail').textContent = u.email;
+      document.getElementById('pRole').textContent  = roleLabels[u.role] || u.role;
+      document.getElementById('pId').textContent    = u._id;
+      document.getElementById('pDate').textContent  = new Date(u.createdAt).toLocaleDateString('en-IN', { day:'numeric', month:'long', year:'numeric' });
+
+      // Show content
+      document.getElementById('loading').style.display     = 'none';
+      document.getElementById('navbar').style.display      = '';
+      document.getElementById('mainContent').style.display = '';
+
+    } catch (err) {
+      document.getElementById('loading').innerHTML =
+        '<div style="text-align:center"><p style="color:#f87171;font-size:.9rem">Could not reach server.<br><a href="login&signup.html" style="color:#60a5fa">Back to login</a></p></div>';
+    }
+  }
+
+  async function logout() {
+    const token = localStorage.getItem('ff_token');
+    if (token) {
+      try { await fetch(`${API}/logout`, { method:'POST', headers:{ Authorization:`Bearer ${token}` } }); } catch(_) {}
+    }
+    localStorage.removeItem('ff_token');
+    localStorage.removeItem('ff_user');
+    window.location.href = 'login&signup.html';
+  }
+
+  init();
+</script>
+</body>
+</html>

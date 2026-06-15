@@ -1,0 +1,172 @@
+[
+  {
+    "_id": "12w765v",
+    "createdAt": "2026-06-03T06:19:20.666Z",
+    "updatedAt": "2026-06-03T06:19:20.666Z",
+    "id": "ORD-7821",
+    "name": "Paracetamol 500mg × 200",
+    "qty": "4 products",
+    "amount": 14200,
+    "status": "Dispatched",
+    "delivery": "Today, 6 PM",
+    "priority": "standard",
+    "retailer": "u6fn9c9",
+    "items": [
+      {
+        "name": "Paracetamol 500mg",
+        "price": 4.2,
+        "qty": 200
+      }
+    ]
+  },
+  {
+    "_id": "5utczil",
+    "createdAt": "2026-06-03T06:19:20.730Z",
+    "updatedAt": "2026-06-03T06:19:20.730Z",
+    "id": "ORD-7818",
+    "name": "Antibiotic Bundle",
+    "qty": "7 products",
+    "amount": 22800,
+    "status": "Delivered",
+    "delivery": "19 May",
+    "priority": "standard",
+    "retailer": "u6fn9c9",
+    "items": []
+  },
+  {
+    "_id": "26j6s25",
+    "createdAt": "2026-06-03T06:19:20.731Z",
+    "updatedAt": "2026-06-03T06:19:20.731Z",
+    "id": "ORD-7815",
+    "name": "Vitamins & Supplements",
+    "qty": "3 products",
+    "amount": 8640,
+    "status": "Pending",
+    "delivery": "21 May",
+    "priority": "standard",
+    "retailer": "u6fn9c9",
+    "items": []
+  },
+  {
+    "_id": "gcb7nxd",
+    "createdAt": "2026-06-03T06:19:20.732Z",
+    "updatedAt": "2026-06-03T06:19:20.732Z",
+    "id": "ORD-7812",
+    "name": "Insulin & Diabetes Care",
+    "qty": "5 products",
+    "amount": 38400,
+    "status": "Delivered",
+    "delivery": "18 May",
+    "priority": "standard",
+    "retailer": "u6fn9c9",
+    "items": []
+  },
+  {
+    "_id": "qvlbvlz",
+    "createdAt": "2026-06-03T06:19:20.733Z",
+    "updatedAt": "2026-06-03T06:19:20.733Z",
+    "id": "ORD-7809",
+    "name": "Cough & Cold Medicines",
+    "qty": "9 products",
+    "amount": 6720,
+    "status": "Dispatched",
+    "delivery": "20 May",
+    "priority": "standard",
+    "retailer": "u6fn9c9",
+    "items": []
+  },
+  {
+    "_id": "3y78w7r",
+    "createdAt": "2026-06-03T06:19:20.735Z",
+    "updatedAt": "2026-06-03T06:19:20.735Z",
+    "id": "ORD-7806",
+    "name": "Cardiology Range",
+    "qty": "6 products",
+    "amount": 51200,
+    "status": "Pending",
+    "delivery": "22 May",
+    "priority": "standard",
+    "retailer": "u6fn9c9",
+    "items": []
+  },
+  {
+    "id": "ORD-5488",
+    "name": "Paracetamol 500mg × 1",
+    "qty": "1 product",
+    "amount": 420,
+    "status": "Pending",
+    "delivery": "Standard (2-3 days)",
+    "priority": "standard",
+    "items": [
+      {
+        "name": "Paracetamol 500mg",
+        "price": 420,
+        "qty": 1
+      }
+    ],
+    "retailer": "u6fn9c9",
+    "_id": "um6n1ye",
+    "createdAt": "2026-06-03T06:45:52.374Z",
+    "updatedAt": "2026-06-03T06:45:52.374Z"
+  },
+  {
+    "id": "ORD-2658",
+    "name": "Metformin 500mg × 22",
+    "qty": "1 product",
+    "amount": 13200,
+    "status": "Pending",
+    "delivery": "Standard (2-3 days)",
+    "priority": "standard",
+    "items": [
+      {
+        "name": "Metformin 500mg",
+        "price": 600,
+        "qty": 22
+      }
+    ],
+    "retailer": "u6fn9c9",
+    "_id": "vzus0h4",
+    "createdAt": "2026-06-03T06:46:21.207Z",
+    "updatedAt": "2026-06-03T06:46:21.207Z"
+  },
+  {
+    "id": "ORD-8263",
+    "name": "Amoxicillin 500mg × 2",
+    "qty": "1 product",
+    "amount": 1400,
+    "status": "Pending",
+    "delivery": "Standard (2-3 days)",
+    "priority": "standard",
+    "items": [
+      {
+        "name": "Amoxicillin 500mg",
+        "price": 700,
+        "qty": 2
+      }
+    ],
+    "retailer": "u6fn9c9",
+    "_id": "mdzgnyq",
+    "createdAt": "2026-06-03T06:47:04.767Z",
+    "updatedAt": "2026-06-03T06:47:04.767Z"
+  },
+  {
+    "id": "ORD-7143",
+    "name": "Omeprazole 20mg × 20",
+    "qty": "1 product",
+    "amount": 10400,
+    "status": "Pending",
+    "delivery": "Standard (2-3 days)",
+    "priority": "standard",
+    "items": [
+      {
+        "name": "Omeprazole 20mg",
+        "price": 520,
+        "qty": 20
+      }
+    ],
+    "retailer": "u6fn9c9",
+    "_id": "6acosml",
+    "createdAt": "2026-06-03T08:18:07.847Z",
+    "updatedAt": "2026-06-03T08:18:07.847Z"
+  }
+]

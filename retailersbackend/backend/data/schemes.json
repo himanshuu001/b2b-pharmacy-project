@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "81su4gg",
+    "createdAt": "2026-06-03T06:19:20.743Z",
+    "updatedAt": "2026-06-03T06:19:20.743Z",
+    "icon": "",
+    "name": "Buy 10 Get 1 — Paracetamol 500mg",
+    "meta": "Expires Sep 15 · 47 retailers active",
+    "saving": "Save ₹480"
+  },
+  {
+    "_id": "wltm6xs",
+    "createdAt": "2026-06-03T06:19:20.744Z",
+    "updatedAt": "2026-06-03T06:19:20.744Z",
+    "icon": "",
+    "name": "Extra 5% Margin — Vitamins Range",
+    "meta": "Expires Sep 30 · Applied automatically",
+    "saving": "Save ₹1,240"
+  },
+  {
+    "_id": "3wz75cq",
+    "createdAt": "2026-06-03T06:19:20.745Z",
+    "updatedAt": "2026-06-03T06:19:20.745Z",
+    "icon": "",
+    "name": "Seasonal Scheme — Monsoon Meds",
+    "meta": "Expires Sep 30 · New this month",
+    "saving": "Save ₹960"
+  },
+  {
+    "_id": "tojo8ss",
+    "createdAt": "2026-06-03T06:19:20.746Z",
+    "updatedAt": "2026-06-03T06:19:20.746Z",
+    "icon": "",
+    "name": "Fast Moving — Antibiotics Bulk",
+    "meta": "Expires May 30 · Order before deadline",
+    "saving": "Save ₹3,560"
+  }
+]

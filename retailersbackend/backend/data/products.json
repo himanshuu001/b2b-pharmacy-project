@@ -1,0 +1,122 @@
+[
+  {
+    "_id": "242hltz",
+    "createdAt": "2026-06-03T06:19:20.641Z",
+    "updatedAt": "2026-06-03T06:19:20.641Z",
+    "name": "Paracetamol 500mg",
+    "price": 420,
+    "unit": "per 100 strips",
+    "category": "Analgesics",
+    "rank": 1,
+    "qty": "840 strips"
+  },
+  {
+    "_id": "5dq0cr0",
+    "createdAt": "2026-06-03T06:19:20.643Z",
+    "updatedAt": "2026-06-03T06:19:20.643Z",
+    "name": "Amoxicillin 500mg",
+    "price": 700,
+    "unit": "per 100 caps",
+    "category": "Antibiotics",
+    "rank": 2,
+    "qty": "420 capsules"
+  },
+  {
+    "_id": "uv5etsi",
+    "createdAt": "2026-06-03T06:19:20.644Z",
+    "updatedAt": "2026-06-03T06:19:20.644Z",
+    "name": "Metformin 500mg",
+    "price": 600,
+    "unit": "per 100 tabs",
+    "category": "Antidiabetics",
+    "rank": 3,
+    "qty": "360 tablets"
+  },
+  {
+    "_id": "8kk048n",
+    "createdAt": "2026-06-03T06:19:20.645Z",
+    "updatedAt": "2026-06-03T06:19:20.645Z",
+    "name": "Atorvastatin 10mg",
+    "price": 650,
+    "unit": "per 100 tabs",
+    "category": "Cardiac",
+    "rank": 4,
+    "qty": "280 tablets"
+  },
+  {
+    "_id": "1ksyi1z",
+    "createdAt": "2026-06-03T06:19:20.646Z",
+    "updatedAt": "2026-06-03T06:19:20.646Z",
+    "name": "Omeprazole 20mg",
+    "price": 520,
+    "unit": "per 100 caps",
+    "category": "Gastro",
+    "rank": 5,
+    "qty": "240 capsules"
+  },
+  {
+    "_id": "6ndl7ij",
+    "createdAt": "2026-06-03T06:19:20.648Z",
+    "updatedAt": "2026-06-03T06:19:20.648Z",
+    "name": "Cetirizine 10mg",
+    "price": 420,
+    "unit": "per 100 tabs",
+    "category": "Antihistamine",
+    "rank": 6,
+    "qty": "200 tablets"
+  },
+  {
+    "_id": "8avarrt",
+    "createdAt": "2026-06-03T06:19:20.649Z",
+    "updatedAt": "2026-06-03T06:19:20.649Z",
+    "name": "Azithromycin 500mg",
+    "price": 980,
+    "unit": "per 100 tabs",
+    "category": "Antibiotics"
+  },
+  {
+    "_id": "zoicijr",
+    "createdAt": "2026-06-03T06:19:20.651Z",
+    "updatedAt": "2026-06-03T06:19:20.651Z",
+    "name": "Pantoprazole 40mg",
+    "price": 560,
+    "unit": "per 100 tabs",
+    "category": "Gastro"
+  },
+  {
+    "_id": "qji1ofm",
+    "createdAt": "2026-06-03T06:19:20.654Z",
+    "updatedAt": "2026-06-03T06:19:20.654Z",
+    "name": "Cough Syrup 100ml",
+    "price": 120,
+    "unit": "per bottle",
+    "category": "Others"
+  },
+  {
+    "_id": "l1yfr92",
+    "createdAt": "2026-06-03T06:19:20.655Z",
+    "updatedAt": "2026-06-03T06:19:20.655Z",
+    "name": "Vitamin C 500mg",
+    "price": 380,
+    "unit": "per 100 tabs",
+    "category": "Others"
+  },
+  {
+    "_id": "urqasw2",
+    "createdAt": "2026-06-03T06:19:20.656Z",
+    "updatedAt": "2026-06-03T06:19:20.656Z",
+    "name": "ORS Sachets",
+    "price": 80,
+    "unit": "per 10 sachets",
+    "category": "Others"
+  },
+  {
+    "_id": "v7pbkgu",
+    "createdAt": "2026-06-03T06:19:20.657Z",
+    "updatedAt": "2026-06-03T06:19:20.657Z",
+    "name": "Anti-malarial Combo",
+    "price": 1240,
+    "unit": "per 10 strips",
+    "category": "Antibiotics"
+  }
+]

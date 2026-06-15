@@ -1,0 +1,411 @@
+{
+  "_seq": {
+    "approvals": 6,
+    "distributors": 5,
+    "retailers": 5,
+    "price_rules": 5,
+    "settlements": 4,
+    "schemes": 3,
+    "inventory": 5,
+    "dist_mapping": 3
+  },
+  "approvals": [
+    {
+      "id": 1,
+      "initials": "RK",
+      "color_class": "av-pur",
+      "name": "RK Pharma Distributors",
+      "type": "Distributor",
+      "region": "Mumbai, MH",
+      "submitted": "19 May 2026",
+      "docs": "All submitted",
+      "status": "pending"
+    },
+    {
+      "id": 2,
+      "initials": "SU",
+      "color_class": "av-grn",
+      "name": "Sunrise Medical Store",
+      "type": "Retailer",
+      "region": "Bengaluru, KA",
+      "submitted": "23 May 2026",
+      "docs": "All submitted",
+      "status": "approved"
+    },
+    {
+      "id": 3,
+      "initials": "GM",
+      "color_class": "av-amb",
+      "name": "Global Med Supplies",
+      "type": "Distributor",
+      "region": "Delhi NCR",
+      "submitted": "21 May 2026",
+      "docs": "GST pending",
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "initials": "LC",
+      "color_class": "av-red",
+      "name": "Life Care Pharmacy",
+      "type": "Retailer",
+      "region": "Lucknow, UP",
+      "submitted": "20 May 2026",
+      "docs": "All submitted",
+      "status": "approved"
+    },
+    {
+      "id": 5,
+      "initials": "MP",
+      "color_class": "av-pur",
+      "name": "MedPlus Wholesale",
+      "type": "Distributor",
+      "region": "Hyderabad, TS",
+      "submitted": "18 May 2026",
+      "docs": "All submitted",
+      "status": "pending"
+    },
+    {
+      "id": 6,
+      "initials": "HN",
+      "color_class": "av-grn",
+      "name": "HealthNext Pharmacy",
+      "type": "Retailer",
+      "region": "Pune, MH",
+      "submitted": "17 May 2026",
+      "docs": "DL missing",
+      "status": "rejected"
+    }
+  ],
+  "distributors": [
+    {
+      "id": 1,
+      "initials": "RK",
+      "color_class": "av-pur",
+      "name": "RK Pharma Distributors",
+      "state": "Maharashtra",
+      "retailers_count": 312,
+      "may_gmv": "₹38.2L",
+      "outstanding": "₹4.2L",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "initials": "SU",
+      "color_class": "av-grn",
+      "name": "Sunrise Medical",
+      "state": "Karnataka",
+      "retailers_count": 198,
+      "may_gmv": "₹29.5L",
+      "outstanding": "₹1.85L",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "initials": "GM",
+      "color_class": "av-amb",
+      "name": "Global Med Supplies",
+      "state": "Delhi NCR",
+      "retailers_count": 445,
+      "may_gmv": "₹22.1L",
+      "outstanding": "₹6.75L",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "initials": "LC",
+      "color_class": "av-red",
+      "name": "Life Care Pharmacy",
+      "state": "Uttar Pradesh",
+      "retailers_count": 88,
+      "may_gmv": "₹10.4L",
+      "outstanding": "₹0",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "initials": "MP",
+      "color_class": "av-pur",
+      "name": "MedPlus Wholesale",
+      "state": "Telangana",
+      "retailers_count": 201,
+      "may_gmv": "₹18.3L",
+      "outstanding": "₹2.1L",
+      "status": "suspended"
+    }
+  ],
+  "retailers": [
+    {
+      "id": 1,
+      "name": "Apollo Pharmacy, Andheri",
+      "city": "Mumbai, MH",
+      "type": "Chain Pharmacy",
+      "distributor": "RK Pharma",
+      "monthly_orders": 42,
+      "last_order": "28 May 2026",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Medway Store",
+      "city": "Bengaluru, KA",
+      "type": "Medical Store",
+      "distributor": "Sunrise Medical",
+      "monthly_orders": 18,
+      "last_order": "27 May 2026",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "name": "HealthPlus Mart",
+      "city": "Delhi, DL",
+      "type": "Medical Store",
+      "distributor": "Global Med",
+      "monthly_orders": 31,
+      "last_order": "26 May 2026",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "name": "CityMed Pharmacy",
+      "city": "Hyderabad, TS",
+      "type": "Pharmacy",
+      "distributor": "MedPlus",
+      "monthly_orders": 9,
+      "last_order": "22 May 2026",
+      "status": "inactive"
+    },
+    {
+      "id": 5,
+      "name": "Laxmi Medical",
+      "city": "Pune, MH",
+      "type": "Medical Store",
+      "distributor": "RK Pharma",
+      "monthly_orders": 25,
+      "last_order": "28 May 2026",
+      "status": "active"
+    }
+  ],
+  "price_rules": [
+    {
+      "id": 1,
+      "category": "Antibiotics",
+      "channel": "Distributor → Retailer",
+      "mrp": 250,
+      "dist_margin": 12,
+      "retail_margin": 18,
+      "gst_rate": "12%",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "category": "Analgesics",
+      "channel": "Distributor → Retailer",
+      "mrp": 80,
+      "dist_margin": 10,
+      "retail_margin": 20,
+      "gst_rate": "5%",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "category": "Vitamins",
+      "channel": "Distributor → Retailer",
+      "mrp": 320,
+      "dist_margin": 15,
+      "retail_margin": 22,
+      "gst_rate": "5%",
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "category": "Antifungals",
+      "channel": "Distributor → Retailer",
+      "mrp": 180,
+      "dist_margin": 11,
+      "retail_margin": 16,
+      "gst_rate": "18%",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "category": "Cardiac",
+      "channel": "Distributor → Retailer",
+      "mrp": 450,
+      "dist_margin": 9,
+      "retail_margin": 14,
+      "gst_rate": "12%",
+      "status": "draft"
+    }
+  ],
+  "settlements": [
+    {
+      "id": 1,
+      "initials": "RK",
+      "color_class": "av-pur",
+      "distributor": "RK Pharma Distributors",
+      "invoice_no": "INV-2026-0541",
+      "amount": "₹4,20,000",
+      "due_date": "30 May 2026",
+      "status": "overdue"
+    },
+    {
+      "id": 2,
+      "initials": "SU",
+      "color_class": "av-grn",
+      "distributor": "Sunrise Medical Store",
+      "invoice_no": "INV-2026-0538",
+      "amount": "₹1,85,000",
+      "due_date": "31 May 2026",
+      "status": "due_today"
+    },
+    {
+      "id": 3,
+      "initials": "GM",
+      "color_class": "av-amb",
+      "distributor": "Global Med Supplies",
+      "invoice_no": "INV-2026-0531",
+      "amount": "₹6,75,000",
+      "due_date": "5 Jun 2026",
+      "status": "escrow"
+    },
+    {
+      "id": 4,
+      "initials": "LC",
+      "color_class": "av-grn",
+      "distributor": "Life Care Pharmacy",
+      "invoice_no": "INV-2026-0527",
+      "amount": "₹3,10,000",
+      "due_date": "8 Jun 2026",
+      "status": "settled"
+    }
+  ],
+  "schemes": [
+    {
+      "id": 1,
+      "name": "Summer Health Drive",
+      "type": "Buy X Get Y Free",
+      "category": "Vitamins & Supplements",
+      "channel": "Retailer",
+      "description": "Buy 10 + Get 2 Free · Vitamins & Supplements",
+      "start_date": "2026-05-01",
+      "end_date": "2026-06-15",
+      "target": 3000,
+      "redemptions": 2341,
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Monsoon Pharma Pack",
+      "type": "Flat Discount %",
+      "category": "Antifungals",
+      "channel": "Both",
+      "description": "15% off Antifungals + Free delivery",
+      "start_date": "2026-06-01",
+      "end_date": "2026-07-31",
+      "target": 1500,
+      "redemptions": 0,
+      "status": "upcoming"
+    },
+    {
+      "id": 3,
+      "name": "Cardiac Care Month",
+      "type": "Extra Margin",
+      "category": "Cardiac",
+      "channel": "Distributor",
+      "description": "Extra 5% margin on Cardiac range",
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-30",
+      "target": 1500,
+      "redemptions": 847,
+      "status": "active"
+    }
+  ],
+  "inventory": [
+    {
+      "id": 1,
+      "product_name": "Amoxicillin 500mg",
+      "sku": "AMX-500",
+      "category": "Antibiotics",
+      "total_stock": 12400,
+      "reserved": 2100,
+      "reorder_level": 2000,
+      "status": "ok"
+    },
+    {
+      "id": 2,
+      "product_name": "Paracetamol 650mg",
+      "sku": "PCT-650",
+      "category": "Analgesics",
+      "total_stock": 45000,
+      "reserved": 5000,
+      "reorder_level": 8000,
+      "status": "ok"
+    },
+    {
+      "id": 3,
+      "product_name": "Atorvastatin 10mg",
+      "sku": "ATV-010",
+      "category": "Cardiac",
+      "total_stock": 3200,
+      "reserved": 800,
+      "reorder_level": 2500,
+      "status": "low"
+    },
+    {
+      "id": 4,
+      "product_name": "Vitamin D3 60K",
+      "sku": "VTD-60K",
+      "category": "Vitamins",
+      "total_stock": 8800,
+      "reserved": 1200,
+      "reorder_level": 1500,
+      "status": "ok"
+    },
+    {
+      "id": 5,
+      "product_name": "Fluconazole 150mg",
+      "sku": "FLC-150",
+      "category": "Antifungals",
+      "total_stock": 1100,
+      "reserved": 300,
+      "reorder_level": 1000,
+      "status": "critical"
+    }
+  ],
+  "dist_mapping": [
+    {
+      "id": 1,
+      "initials": "RK",
+      "color_class": "av-pur",
+      "distributor": "RK Pharma Distributors",
+      "state": "Maharashtra",
+      "district": "Mumbai, Thane",
+      "retailers_mapped": 312,
+      "coverage_pct": 87,
+      "last_updated": "23 May 2026"
+    },
+    {
+      "id": 2,
+      "initials": "SU",
+      "color_class": "av-grn",
+      "distributor": "Sunrise Medical",
+      "state": "Karnataka",
+      "district": "Bengaluru",
+      "retailers_mapped": 198,
+      "coverage_pct": 72,
+      "last_updated": "20 May 2026"
+    },
+    {
+      "id": 3,
+      "initials": "GM",
+      "color_class": "av-amb",
+      "distributor": "Global Med Supplies",
+      "state": "Delhi NCR",
+      "district": "Delhi, Gurgaon, Noida",
+      "retailers_mapped": 445,
+      "coverage_pct": 94,
+      "last_updated": "25 May 2026"
+    }
+  ]
+}

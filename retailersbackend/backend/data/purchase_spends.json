@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "kj6mwel",
+    "createdAt": "2026-06-03T06:19:20.659Z",
+    "updatedAt": "2026-06-03T06:19:20.659Z",
+    "month": "Dec",
+    "purchases": 280000,
+    "payments": 260000
+  },
+  {
+    "_id": "slylqag",
+    "createdAt": "2026-06-03T06:19:20.660Z",
+    "updatedAt": "2026-06-03T06:19:20.660Z",
+    "month": "Jan",
+    "purchases": 310000,
+    "payments": 295000
+  },
+  {
+    "_id": "psdwxjh",
+    "createdAt": "2026-06-03T06:19:20.661Z",
+    "updatedAt": "2026-06-03T06:19:20.661Z",
+    "month": "Feb",
+    "purchases": 295000,
+    "payments": 310000
+  },
+  {
+    "_id": "mm7fw5y",
+    "createdAt": "2026-06-03T06:19:20.662Z",
+    "updatedAt": "2026-06-03T06:19:20.662Z",
+    "month": "Mar",
+    "purchases": 360000,
+    "payments": 340000
+  },
+  {
+    "_id": "2vvclg2",
+    "createdAt": "2026-06-03T06:19:20.663Z",
+    "updatedAt": "2026-06-03T06:19:20.663Z",
+    "month": "Apr",
+    "purchases": 408000,
+    "payments": 390000
+  },
+  {
+    "_id": "io6plbe",
+    "createdAt": "2026-06-03T06:19:20.664Z",
+    "updatedAt": "2026-06-03T06:19:20.664Z",
+    "month": "May",
+    "purchases": 482360,
+    "payments": 334160
+  },
+  {
+    "_id": "u9xjlcp",
+    "createdAt": "2026-06-03T06:42:10.798Z",
+    "updatedAt": "2026-06-03T08:18:07.849Z",
+    "month": "Jun",
+    "purchases": 25420,
+    "payments": 46600
+  }
+]

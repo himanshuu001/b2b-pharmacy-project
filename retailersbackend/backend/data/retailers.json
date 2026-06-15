@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "u6fn9c9",
+    "createdAt": "2026-06-03T06:19:20.637Z",
+    "updatedAt": "2026-06-03T08:18:07.846Z",
+    "name": "Apollo Pharmacy",
+    "role": "Retailer",
+    "location": "Mumbai",
+    "kycStatus": "Verified",
+    "kycId": "RET-00421",
+    "creditLimit": 200000,
+    "creditUsed": 8570,
+    "walletBalance": 0,
+    "outstandingDue": 8570,
+    "overdueAmount": 12800,
+    "paidThisMonth": 380760,
+    "escrowBalance": 18450,
+    "distributor": {
+      "name": "MedCore Distributors",
+      "location": "Andheri East, Mumbai",
+      "phone": "+91 98200 44312"
+    }
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "pysfvpb",
+    "createdAt": "2026-06-03T06:19:20.737Z",
+    "updatedAt": "2026-06-03T06:19:20.737Z",
+    "name": "Paracetamol 500mg",
+    "batch": "Batch #B2840",
+    "date": "Jun 2026",
+    "risk": "critical",
+    "qty": "280 strips"
+  },
+  {
+    "_id": "khds2bd",
+    "createdAt": "2026-06-03T06:19:20.739Z",
+    "updatedAt": "2026-06-03T06:19:20.739Z",
+    "name": "Amoxicillin 250mg",
+    "batch": "Batch #B2241",
+    "date": "Jul 2026",
+    "risk": "warning",
+    "qty": "140 caps"
+  },
+  {
+    "_id": "d1blpv2",
+    "createdAt": "2026-06-03T06:19:20.740Z",
+    "updatedAt": "2026-06-03T06:19:20.740Z",
+    "name": "Cetirizine 10mg",
+    "batch": "Batch #B2109",
+    "date": "Aug 2026",
+    "risk": "warning",
+    "qty": "90 tabs"
+  },
+  {
+    "_id": "t4rbeih",
+    "createdAt": "2026-06-03T06:19:20.741Z",
+    "updatedAt": "2026-06-03T06:19:20.741Z",
+    "name": "Omeprazole 20mg",
+    "batch": "Batch #B1984",
+    "date": "Oct 2026",
+    "risk": "normal",
+    "qty": "200 caps"
+  },
+  {
+    "_id": "caah4r8",
+    "createdAt": "2026-06-03T06:19:20.742Z",
+    "updatedAt": "2026-06-03T06:19:20.742Z",
+    "name": "Metformin 500mg",
+    "batch": "Batch #B2398",
+    "date": "Nov 2026",
+    "risk": "normal",
+    "qty": "180 tabs"
+  }
+]

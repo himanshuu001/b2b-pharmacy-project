@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "7355yo7",
+    "createdAt": "2026-06-03T06:19:20.751Z",
+    "updatedAt": "2026-06-03T06:19:20.751Z",
+    "type": "Demand Spike",
+    "icon": "📈",
+    "color": "#6366f1",
+    "bg": "#eef2ff",
+    "msg": "Monsoon season ahead — stock up on ORS, anti-diarrheals and anti-malarials. Demand up 40%."
+  },
+  {
+    "_id": "oxxk3rl",
+    "createdAt": "2026-06-03T06:19:20.754Z",
+    "updatedAt": "2026-06-03T06:19:20.754Z",
+    "type": "Reorder Alert",
+    "icon": "⚠️",
+    "color": "#f59e0b",
+    "bg": "#fffbeb",
+    "msg": "Paracetamol 500mg stock at 12-day cover. Recommended reorder: 500 strips today."
+  },
+  {
+    "_id": "g923ejp",
+    "createdAt": "2026-06-03T06:19:20.755Z",
+    "updatedAt": "2026-06-03T06:19:20.755Z",
+    "type": "Scheme Opportunity",
+    "icon": "💡",
+    "color": "#10b981",
+    "bg": "#ecfdf5",
+    "msg": "Vitamin C range qualifies for an extra 3% margin if ordered before May 25."
+  },
+  {
+    "_id": "x8rdx0z",
+    "createdAt": "2026-06-03T06:19:20.756Z",
+    "updatedAt": "2026-06-03T06:19:20.756Z",
+    "type": "Payment Reminder",
+    "icon": "⏰",
+    "color": "#ef4444",
+    "bg": "#fef2f2",
+    "msg": "₹12,800 overdue balance. Pay before May 22 to avoid credit limit suspension."
+  }
+]

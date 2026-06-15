@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "g94pge2",
+    "createdAt": "2026-06-03T06:19:20.747Z",
+    "updatedAt": "2026-06-03T06:19:20.747Z",
+    "id": "RX-4821",
+    "patient": "Rajesh Sharma",
+    "doc": "Dr. A. Mehta",
+    "status": "Verified",
+    "date": "20 May"
+  },
+  {
+    "_id": "s587095",
+    "createdAt": "2026-06-03T06:19:20.748Z",
+    "updatedAt": "2026-06-03T06:19:20.748Z",
+    "id": "RX-4820",
+    "patient": "Priya Iyer",
+    "doc": "Dr. S. Kumar",
+    "status": "Pending",
+    "date": "20 May"
+  },
+  {
+    "_id": "vt2pwjk",
+    "createdAt": "2026-06-03T06:19:20.749Z",
+    "updatedAt": "2026-06-03T06:19:20.749Z",
+    "id": "RX-4819",
+    "patient": "Arun Nair",
+    "doc": "Dr. R. Joshi",
+    "status": "Verified",
+    "date": "19 May"
+  },
+  {
+    "_id": "iqmjsvs",
+    "createdAt": "2026-06-03T06:19:20.750Z",
+    "updatedAt": "2026-06-03T06:19:20.750Z",
+    "id": "RX-4818",
+    "patient": "Sunita Patil",
+    "doc": "Dr. M. Rao",
+    "status": "Rejected",
+    "date": "19 May"
+  },
+  {
+    "id": "RX-4767",
+    "patient": "nishitt",
+    "doc": "ddd",
+    "status": "Pending",
+    "date": "3 Jun",
+    "_id": "a22r7ym",
+    "createdAt": "2026-06-03T08:18:49.176Z",
+    "updatedAt": "2026-06-03T08:18:49.176Z"
+  }
+]

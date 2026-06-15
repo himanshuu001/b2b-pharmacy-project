@@ -1,0 +1,4 @@
+◇ injected env (1) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
+MongoDB connected and seeded
+Fair Ford Super Admin API  →  http://localhost:3000/api
+Dashboard                  →  http://localhost:3000/
